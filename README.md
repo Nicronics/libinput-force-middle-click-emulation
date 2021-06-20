@@ -1,16 +1,7 @@
-# libinput-force-middle-click-emulation
+# libinput-force-tap-to-click
 
-Force libinput to emulate a middle click when pressing left and right buttons
-simultaneously.  This allows GNOME Wayland (and other Wayland compositors that
-do not expose libinput configuration) to configure the existing libinput
-functionality.
-
-## Information for users of mutter version 3.36.1 or newer
-This is not needed anymore if you use `mutter` version 3.36.1 or newer.
-There it is possible to directly enable middle click emulation:
-```bash
-gsettings set org.gnome.desktop.peripherals.mouse middle-click-emulation true
-```
+Force libinput to enable Tap-to-click for touchpad.  This allows Wayland compositors (that do not
+expose libinput configuration) to configure the existing libinput functionality.
 
 ## Installation
 
@@ -25,9 +16,8 @@ Log out and log in to enable.
 
 ## References
 
-* [GNOME mutter issue](https://gitlab.gnome.org/GNOME/mutter/issues/238)
-* [libinput documentation](https://wayland.freedesktop.org/libinput/doc/latest/middle-button-emulation.html)
-* Inspired by [scroll-emulation](https://github.com/PeterCxy/scroll-emulation)
+* [libinput documentation](https://wayland.freedesktop.org/libinput/doc/latest/tapping.html)
+* Inspired by [middle-click-emulation](https://github.com/gaul/libinput-force-middle-click-emulation)
 
 ## License
 
